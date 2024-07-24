@@ -1,0 +1,5 @@
+html {
+  height: 100dvh;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
