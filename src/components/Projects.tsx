@@ -16,16 +16,18 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="px-16 py-14 flex flex-col items-center gap-14 dark:bg-navy scroll-mt-20">
-      <h2 className="font-mont font-bold text-3xl dark:text-lightGrey">My Projects</h2>
+    <div id="projects" className="relative px-5 py-10 flex flex-col items-center gap-7 dark:bg-navy scroll-mt-20 md:px-16 md:py-14 md:gap-14">
+      <h2 className="font-mont font-bold text-xl md:text-3xl dark:text-lightGrey">My Projects</h2>
 
-      <div className="flex gap-10 items-center justify-center">
-        <div className="p-4 bg-hoverGrey rounded-full hover:bg-grey hover:cursor-pointer active:opacity-30" onClick={previousProject}>
+      {/* scroll container */}
+      <div className="flex items-center justify-center md:gap-10">
+        <div
+          className="absolute top-[50%] bottom-[50%] left-0 px-4 py-6 flex justify-center items-center bg-white rounded-full hover:bg-grey hover:cursor-pointer active:opacity-30 md:relative md:top-0 md:bottom-0 md:left-0 md:bg-hoverGrey"
+          onClick={previousProject}>
           <FaArrowLeft />
         </div>
 
-        {/* scroll container */}
-        <div className="w-[60%] flex flex-col gap-7 items-center">
+        <div className="md:w-[60%] flex flex-col gap-7 items-center">
           <ProjectCard
             imageURL={list[projectIndex].url}
             titleText={list[projectIndex].title}
@@ -42,7 +44,9 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="p-4 bg-hoverGrey rounded-full hover:bg-grey hover:cursor-pointer active:opacity-30" onClick={nextProject}>
+        <div
+          className="absolute top-[50%] bottom-[50%] right-0 px-4 py-6 flex justify-center items-center bg-white rounded-full hover:bg-grey hover:cursor-pointer active:opacity-30 md:relative md:top-0 md:bottom-0 md:right-0 md:bg-hoverGrey"
+          onClick={nextProject}>
           <FaArrowRight />
         </div>
       </div>

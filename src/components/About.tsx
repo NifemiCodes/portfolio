@@ -2,12 +2,12 @@ import "../styles/output.css";
 
 const About = () => {
   return (
-    <div id="about" className="bg-hoverGrey text-gray-500 py-14 px-16 flex flex-col items-center justify-center gap-16 scroll-mt-20">
-      <h3 className="text-3xl font-bold font-mont">Welcome to my website!</h3>
+    <div id="about" className="bg-hoverGrey text-gray-500 px-5 py-10 flex flex-col items-center gap-7 scroll-mt-20 md:px-16  md:py-14 md:gap-16">
+      <h3 className="font-bold font-mont text-xl md:text-3xl">Welcome to my website!</h3>
 
-      <div className="w-[60%] flex items-start gap-10">
+      <div className="flex flex-col items-start gap-5 md:w-[60%] md:flex-row md:gap-10">
         {/* text */}
-        <div className="flex-1 flex-wrap font-raj">
+        <div className="flex-1 font-raj">
           <p>
             As a frontend web developer, I specialize in building responsive and well optimized websites utilizing developer best-practices, and using
             the latest industry tools to create seamless User Experiences and bring unique and innovative ideas to life on the web.

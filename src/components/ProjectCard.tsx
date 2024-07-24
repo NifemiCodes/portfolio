@@ -12,9 +12,9 @@ export interface ProjectCardProps {
 
 const ProjectCard = ({ imageURL, titleText, descText, liveLink, repoLink, stackList }: ProjectCardProps) => {
   return (
-    <div className="bg-hoverGrey rounded-xl p-10 flex gap-5 animate-fade">
+    <div className="bg-hoverGrey rounded-xl p-5 flex flex-col items-center gap-5 md:p-10 md:flex-row md:items-start">
       {/* left image */}
-      <div className="relative w-[50%] overflow-hidden rounded-lg">
+      <div className="relative overflow-hidden rounded-lg md:w-[50%]">
         <div className="group absolute rounded-lg top-0 bottom-0 left-0 right-0 flex justify-center items-center hover:bg-blackT hover:backdrop-blur-[2px]">
           <a
             href={liveLink}
@@ -28,14 +28,13 @@ const ProjectCard = ({ imageURL, titleText, descText, liveLink, repoLink, stackL
       </div>
 
       {/* right text */}
-      <div className="w-[50%] flex flex-col gap-1">
-        <h3 className="font-mont font-bold text-2xl">{titleText}</h3>
-
-        <div className="flex-1">
+      <div className="flex flex-col gap-1 md:w-[50%]">
+        <div>
+          <h3 className="font-mont font-bold text-2xl">{titleText}</h3>
           <p>{descText}</p>
         </div>
 
-        <div className="flex-1 flex flex-col gap-[10px]">
+        <div className="flex flex-col gap-1">
           <div>
             <a href={liveLink} target="_blank" rel="noopener noreferrer" className="text-links  hover:underline">
               <p className="flex items-center">

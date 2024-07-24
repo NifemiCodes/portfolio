@@ -75,10 +75,10 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="bg-hoverGrey flex flex-col items-center gap-10 px-16 py-14 scroll-mt-20">
+    <div id="contact" className="bg-hoverGrey flex flex-col items-center gap-10 px-5 py-14 scroll-mt-20 md:px-16">
       <h2 className="font-mont font-bold text-3xl">Send Me A Message</h2>
 
-      <form onSubmit={validate} ref={form} className="flex flex-col gap-5 w-[30%]">
+      <form onSubmit={validate} ref={form} className="w-full flex flex-col gap-5 md:w-[30%]">
         <div className="flex flex-col gap-1">
           <label htmlFor="name">Name</label>
           <input
