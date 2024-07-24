@@ -53,7 +53,7 @@ const ProjectCard = ({ imageURL, titleText, descText, liveLink, repoLink, stackL
 
           <div className="flex gap-3 items-center">
             {stackList?.map((item) => (
-              <img src={`src/assets/images/${item}-logo.png`} alt="logo" className="w-[30px] h-[30px]" />
+              <img src={`./src/assets/images/${item}-logo.png`} alt="logo" className="w-[30px] h-[30px]" />
             ))}
           </div>
         </div>

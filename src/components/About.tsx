@@ -21,7 +21,7 @@ const About = () => {
 
         {/* image */}
         <div className="flex-1 flex justify-center items-center">
-          <img src="src/assets/images/codeIllustration.jpg" className="h-full w-full" />
+          <img src="./src/assets/images/codeIllustration.jpg" className="h-full w-full" />
         </div>
       </div>
     </div>
