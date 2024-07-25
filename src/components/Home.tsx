@@ -11,18 +11,18 @@ const Home = () => {
           </h1>
 
           <div className="flex gap-4 items-center">
-            <img src="/assets/images/react-logo.png" alt="react" className="w-7 h-7 lg:w-[35px] lg:h-[35px]" />
-            <img src="/assets/images/react-native-logo.png" alt="react native" className="w-9 h-8 lg:w-[55px] lg:h-[40px]" />
-            <img src="/assets/images/typescript-logo.png" alt="typescript" className="w-7 h-6 lg:w-[40px] lg:h-[30px]" />
-            <img src="/assets/images/tailwind-logo.png" alt="tailwindCSS" className="w-7 h-4 lg:w-[50px] lg:h-[35px]" />
+            <img src="/assets/react-logo.png" alt="react" className="w-7 h-7 lg:w-[35px] lg:h-[35px]" />
+            <img src="/assets/react-native-logo.png" alt="react native" className="w-9 h-8 lg:w-[55px] lg:h-[40px]" />
+            <img src="/assets/typescript-logo.png" alt="typescript" className="w-7 h-6 lg:w-[40px] lg:h-[30px]" />
+            <img src="/assets/tailwind-logo.png" alt="tailwindCSS" className="w-7 h-4 lg:w-[50px] lg:h-[35px]" />
           </div>
 
           <div className="flex gap-2 items-center">
             <a href="https://github.com/NifemiCodes" target="_blank" rel="noopener noreferrer">
-              <img src="public/assets/images/github-icon.png" alt="github" className="w-10 h-10 lg:w-14 lg:h-14" />
+              <img src="/assets/github-icon.png" alt="github" className="w-10 h-10 lg:w-14 lg:h-14" />
             </a>
             <a href="https://www.linkedin.com/in/olorunifemi-akingba" target="_blank" rel="noopener noreferrer">
-              <img src="public/assets/images/linkedin-icon.png" alt="linkedIn" className="w-7 h-7 lg:w-10 lg:h-10" />
+              <img src="/assets/linkedin-icon.png" alt="linkedIn" className="w-7 h-7 lg:w-10 lg:h-10" />
             </a>
           </div>
         </div>
