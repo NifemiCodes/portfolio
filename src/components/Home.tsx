@@ -11,10 +11,10 @@ const Home = () => {
           </h1>
 
           <div className="flex gap-4 items-center">
-            <img src="public/assets/images/react-logo.png" alt="react" className="w-7 h-7 lg:w-[35px] lg:h-[35px]" />
-            <img src="public/assets/images/react-native-logo.png" alt="react native" className="w-9 h-8 lg:w-[55px] lg:h-[40px]" />
-            <img src="public/assets/images/typescript-logo.png" alt="typescript" className="w-7 h-6 lg:w-[40px] lg:h-[30px]" />
-            <img src="public/assets/images/tailwind-logo.png" alt="tailwindCSS" className="w-7 h-4 lg:w-[50px] lg:h-[35px]" />
+            <img src="/assets/images/react-logo.png" alt="react" className="w-7 h-7 lg:w-[35px] lg:h-[35px]" />
+            <img src="/assets/images/react-native-logo.png" alt="react native" className="w-9 h-8 lg:w-[55px] lg:h-[40px]" />
+            <img src="/assets/images/typescript-logo.png" alt="typescript" className="w-7 h-6 lg:w-[40px] lg:h-[30px]" />
+            <img src="/assets/images/tailwind-logo.png" alt="tailwindCSS" className="w-7 h-4 lg:w-[50px] lg:h-[35px]" />
           </div>
 
           <div className="flex gap-2 items-center">
@@ -29,7 +29,7 @@ const Home = () => {
 
         {/* right */}
         <div className="flex-1 h-20 w-20 rounded-full overflow-hidden lg:rounded-none lg:h-[350px] lg:mr-16">
-          <img src="public/assets/images/myPhoto.jpg" alt="photo" className="h-full animate-fade" />
+          <img src="/assets/images/myPhoto.jpg" alt="photo" className="h-full animate-fade" />
         </div>
       </div>
     </div>
