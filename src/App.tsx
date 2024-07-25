@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div data-theme={theme} className="h-[100dvh]">
+    <div data-theme={theme} className="h-[100dvh] dark:bg-bgDark dark:text-white">
       <NavBar theme={theme} themeBtnFunc={toggleTheme} />
       <Home />
       <About />

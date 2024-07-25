@@ -8,27 +8,25 @@ export default {
       white: "#ffffff",
       blackT: "rgba(0, 0, 0, 0.5)",
       whiteT: "rgba(255, 255, 255, 0.5)",
-      hoverGrey: "#f5f5f5",
-      lightGrey: "#d3d3d3",
-      grey: "#a9a9a9",
-      links: "#072ac8",
-      red: "#ff0000",
-      navy: "#00022b",
       navyT: "#00022b4d",
-      cyan: "cyan",
+      bgDark: "#00022b",
+      secBgL: "#e0e0e0",
+      secBgD: "#a0a0a0",
+      links: "#1e88e5",
+      lightGrey: "#f5f5f5",
+      grey: "#a9a9a9",
     },
     fontFamily: {
       anton: "Anton, Impact, sans-serif",
       mont: "Montserrat, sans-serif",
-      roboto: "Roboto Condensed, sans-serif",
-      julius: "Julius Sans One, Roboto Sans Open, sans-serif",
       raj: "Rajdhani, sans-serif",
       courier: "Courier New, sans-serif",
     },
     extend: {
       keyframes: {
-        scroll: {
-          "100%": { translate: "-100%" },
+        fadeIn: {
+          "0%": { opacity: 0, "margin-top": "150px" },
+          "100%": { opacity: 1, "margin-top": "0px" },
         },
         fade: {
           "0%": { opacity: 0 },
@@ -36,8 +34,8 @@ export default {
         },
       },
       animation: {
-        scroll: "scroll 10s linear infinite",
-        fade: "fade 1s linear",
+        fadein: "fadeIn 1.5s ease-in-out",
+        fade: "fade 2s ease-in-out",
       },
     },
   },

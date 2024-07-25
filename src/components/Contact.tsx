@@ -75,10 +75,10 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="bg-hoverGrey flex flex-col items-center gap-10 px-5 py-14 scroll-mt-20 md:px-16">
+    <div id="contact" className="bg-secBgL dark:bg-secBgD flex flex-col items-center gap-10 px-5 py-14 scroll-mt-20 lg:px-16">
       <h2 className="font-mont font-bold text-3xl">Send Me A Message</h2>
 
-      <form onSubmit={validate} ref={form} className="w-full flex flex-col gap-5 md:w-[30%]">
+      <form onSubmit={validate} ref={form} className="w-full flex flex-col gap-5 lg:w-[30%]">
         <div className="flex flex-col gap-1">
           <label htmlFor="name">Name</label>
           <input
@@ -86,7 +86,9 @@ const Contact = () => {
             name="name"
             id="name"
             placeholder="Name..."
-            className={`border-${nameError ? "red" : "black"} border-[1px] border-solid rounded-lg p-2 font-courier placeholder:text-grey`}
+            className={`${
+              nameError ? "border-red" : "border-black dark:border-links"
+            } border-[1px] border-solid rounded-lg p-2 font-courier bg-white bg-opacity-0 dark:placeholder:text-lightGrey`}
             onChange={(e) => setName(e.currentTarget.value)}
           />
           {nameError ? <small className="text-red">Name cannot be empty</small> : null}
@@ -99,7 +101,9 @@ const Contact = () => {
             name="email"
             id="email"
             placeholder="Email..."
-            className={`border-${emailError ? "red" : "black"} border-[1px] border-solid rounded-lg p-2 font-courier placeholder:text-grey`}
+            className={`${
+              emailError ? "border-red" : "border-black dark:border-links"
+            } border-[1px] border-solid rounded-lg p-2 font-courier bg-white bg-opacity-0 dark:placeholder:text-lightGrey`}
             onChange={(e) => setEmail(e.currentTarget.value)}
           />
           {emailError ? <small className="text-red">{emailMessg}</small> : null}
@@ -114,8 +118,7 @@ const Contact = () => {
             name="phone"
             id="phone"
             placeholder="e.g (+234)1234567890"
-            className="border-black border-[1px] border-solid rounded-lg p-2 font-courier placeholder:text-grey"
-            //onChange={(e) => setName(e.currentTarget.value)}
+            className="border-black dark:border-links border-[1px] border-solid rounded-lg p-2 font-courier bg-white bg-opacity-0 dark:placeholder:text-lightGrey"
           />
         </div>
 
@@ -125,12 +128,14 @@ const Contact = () => {
             id="content"
             rows={10}
             placeholder="message text..."
-            className={`border-${messageError ? "red" : "black"} border-[1px] border-solid rounded-lg p-2 font-courier placeholder:text-grey`}
+            className={`${
+              messageError ? "border-red" : "border-black dark:border-links"
+            } border-[1px] border-solid rounded-lg p-2 font-courier bg-white bg-opacity-0 dark:placeholder:text-lightGrey`}
             onChange={(e) => setMessage(e.currentTarget.value)}></textarea>
           {messageError ? <small className="text-red">Name cannot be empty</small> : null}
         </div>
 
-        <button className="bg-links rounded-lg text-white font-mont self-end py-2 px-3 hover:brightness-125 active:opacity-50">Send</button>
+        <button className="bg-links rounded-lg text-white font-mont self-end py-2 px-3 hover:brightness-75 active:opacity-50">Send</button>
       </form>
     </div>
   );

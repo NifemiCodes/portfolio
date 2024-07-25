@@ -16,36 +16,39 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="relative px-5 py-10 flex flex-col items-center gap-7 dark:bg-navy scroll-mt-20 md:px-16 md:py-14 md:gap-14">
-      <h2 className="font-mont font-bold text-xl md:text-3xl dark:text-lightGrey">My Projects</h2>
+    <div id="projects" className="dark:bg-bgDark relative px-5 py-10 flex flex-col items-center gap-7 scroll-mt-20 lg:px-16 lg:py-14 lg:gap-14">
+      <h2 className="font-mont font-bold text-xl lg:text-3xl">My Projects</h2>
 
       {/* scroll container */}
-      <div className="flex items-center justify-center md:gap-10">
+      <div className="flex items-center justify-center lg:gap-10">
         <div
-          className="absolute top-[50%] bottom-[50%] left-0 px-4 py-6 flex justify-center items-center bg-white rounded-full hover:bg-grey hover:cursor-pointer active:opacity-30 md:relative md:top-0 md:bottom-0 md:left-0 md:bg-hoverGrey"
+          className="absolute top-[50%] bottom-[50%] left-1 px-2 py-4 flex justify-center items-center bg-secBgL dark:bg-secBgD bg-opacity-0 dark:bg-opacity-0 border-2 border-solid border-black dark:border-white rounded-full hover:brightness-75 hover:cursor-pointer active:opacity-30 lg:relative lg:top-0 lg:bottom-0 lg:left-0 lg:p-4 lg:bg-opacity-100 lg:dark:bg-opacity-100 lg:border-0"
           onClick={previousProject}>
           <FaArrowLeft />
         </div>
 
-        <div className="md:w-[60%] flex flex-col gap-7 items-center">
-          <ProjectCard
-            imageURL={list[projectIndex].url}
-            titleText={list[projectIndex].title}
-            descText={list[projectIndex].description}
-            liveLink={list[projectIndex].live}
-            repoLink={list[projectIndex].repo}
-            stackList={list[projectIndex].stack}
-          />
+        <div className="lg:w-[50%] flex flex-col gap-7 items-center">
+          <div className="bg-secBgL dark:bg-secBgD rounded-xl p-5 flex flex-col items-center gap-4 lg:flex-row lg:items-start">
+            <ProjectCard
+              imageURL={list[projectIndex].url}
+              titleText={list[projectIndex].title}
+              descText={list[projectIndex].description}
+              liveLink={list[projectIndex].live}
+              repoLink={list[projectIndex].repo}
+              stackList={list[projectIndex].stack}
+            />
+          </div>
 
+          {/* project tab */}
           <div className="flex gap-2">
             {Array.from({ length: list.length }).map((_, index) => (
-              <div className={"w-[20px] h-[20px] rounded-full " + (projectIndex === index ? "bg-grey" : "bg-lightGrey")}></div>
+              <div className={"w-[20px] h-[20px] rounded-full " + (projectIndex === index ? "bg-links" : "bg-grey dark:bg-secBgD")}></div>
             ))}
           </div>
         </div>
 
         <div
-          className="absolute top-[50%] bottom-[50%] right-0 px-4 py-6 flex justify-center items-center bg-white rounded-full hover:bg-grey hover:cursor-pointer active:opacity-30 md:relative md:top-0 md:bottom-0 md:right-0 md:bg-hoverGrey"
+          className="absolute top-[50%] bottom-[50%] right-1 px-2 py-4 flex justify-center items-center bg-secBgL dark:bg-secBgD bg-opacity-0 dark:bg-opacity-0 border-2 border-solid border-black dark:border-white rounded-full hover:brightness-75 hover:cursor-pointer active:opacity-30 lg:relative lg:top-0 lg:bottom-0 lg:right-0 lg:p-4 lg:bg-opacity-100 lg:dark:bg-opacity-100 lg:border-0"
           onClick={nextProject}>
           <FaArrowRight />
         </div>

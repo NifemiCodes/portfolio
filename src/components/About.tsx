@@ -2,10 +2,10 @@ import "../styles/output.css";
 
 const About = () => {
   return (
-    <div id="about" className="bg-hoverGrey text-gray-500 px-5 py-10 flex flex-col items-center gap-7 scroll-mt-20 md:px-16  md:py-14 md:gap-16">
-      <h3 className="font-bold font-mont text-xl md:text-3xl">Welcome to my website!</h3>
+    <div id="about" className="bg-secBgL dark:bg-secBgD px-5 py-10 flex flex-col items-center gap-7 scroll-mt-20 lg:px-16 lg:py-14 lg:gap-16">
+      <h3 className="font-bold font-mont text-xl lg:text-3xl">Welcome to my website!</h3>
 
-      <div className="flex flex-col items-start gap-5 md:w-[60%] md:flex-row md:gap-10">
+      <div className="flex flex-col items-start gap-5 lg:w-[60%] lg:flex-row lg:gap-10">
         {/* text */}
         <div className="flex-1 font-raj">
           <p>
@@ -20,8 +20,8 @@ const About = () => {
         </div>
 
         {/* image */}
-        <div className="flex-1 flex justify-center items-center">
-          <img src="./src/assets/images/codeIllustration.jpg" className="h-full w-full" />
+        <div className="flex-1 h-full flex justify-center items-center">
+          <img src="public/assets/images/codeIllustration.jpg" className="h-full w-full" />
         </div>
       </div>
     </div>
