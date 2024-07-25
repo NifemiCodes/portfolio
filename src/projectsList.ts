@@ -11,7 +11,7 @@ interface projectData {
 
 export const list: projectData[] = [
   {
-    url: "/assets/fylo.png",
+    url: `${import.meta.env.BASE_URL}assets/fylo.png`,
     title: "website project",
     description:
       "This is a challenge from frontendmentor.io. I made this as an assignment during my training at Zuri(an affordable online tech training organization). It's a simple single page project with email validation.",
@@ -20,7 +20,7 @@ export const list: projectData[] = [
     stack: ["html", "css", "js"],
   },
   {
-    url: "/assets/maker.png",
+    url: `${import.meta.env.BASE_URL}assets/maker.png`,
     title: "Website Project",
     description:
       "This is a frontend challenge gotten from frontend Mentor. A single page website which put my layout skills to the test. I also included custom animations to the site. Check it out!",
@@ -29,7 +29,7 @@ export const list: projectData[] = [
     stack: ["html", "css", "js"],
   },
   {
-    url: "/assets/news.png",
+    url: `${import.meta.env.BASE_URL}assets/news.png`,
     title: "Static web page",
     description: "This is another frontend mentor challenge that put my layout skills to the test using CSS grid, you can view the live site below",
     live: "https://nifemicodes.github.io/frontend-mentor-newshomepage/",
@@ -37,7 +37,7 @@ export const list: projectData[] = [
     stack: ["html", "css", "js"],
   },
   {
-    url: "/assets/newsletter.png",
+    url: `${import.meta.env.BASE_URL}assets/newsletter.png`,
     title: "Static web page",
     description: "A newsletter signup form with input validation and error state handling. The site is live at the link below.",
     live: "https://nifemicodes.github.io/frontend-mentor-newsletter-signup/",
