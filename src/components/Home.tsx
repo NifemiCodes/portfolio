@@ -29,7 +29,7 @@ const Home = () => {
 
         {/* right */}
         <div className="flex-1 h-20 w-20 rounded-full overflow-hidden lg:rounded-none lg:h-[350px] lg:mr-16">
-          <img src="/assets/images/myPhoto.jpg" alt="photo" className="h-full animate-fade" />
+          <img src={`${import.meta.env.BASE_URL}assets/myPhoto.jpg`} alt="photo" className="h-full animate-fade" />
         </div>
       </div>
     </div>
